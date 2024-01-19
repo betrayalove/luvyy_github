@@ -1,0 +1,12 @@
+.standart_container form{
+    background-color: var(--background-color) !important;
+}
+.licenses{
+    display: flex;
+}
+.licen{
+    background-color: var(--background-secondary-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}

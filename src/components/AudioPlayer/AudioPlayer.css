@@ -1,0 +1,124 @@
+
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 50%; /* Добавьте это */
+    transform: translateX(-50%); /* И это */
+    height: 85px;
+    background-color: var(--background-secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    width: 80%;
+    border-radius: 20px 20px 0 0;
+    font-size: var(--text-size-14);
+    font-weight: var(--font-weight-normal);
+}
+
+
+.time-slider {
+    width: calc(100% - 40px);
+    height: 1px;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 40px);
+}
+
+.player-image {
+    width: 55px !important;
+    height: 55px !important;
+    border-radius: 10px 2px 2px 2px; /* top-left, top-right, bottom-right, bottom-left */
+    margin-right: 20px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.player-container img {
+    width: 30px;
+    height: 30px;
+}
+
+.left-player {
+    width: 40%;
+    display: flex;
+    align-items: center; /* Добавьте это */
+}
+
+.center-player {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Добавьте это */
+}
+
+.right-player {
+    width: 40%;
+    display: flex;
+    align-items: center; /* Добавьте это */
+    justify-content: right;
+}
+
+.right-player input {
+    margin-left: 10px;
+}
+
+.add-to-cart {
+    margin-right: 20px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 5px;
+    position: relative;
+    border-radius: 4px;
+    background: linear-gradient(to right, #ffffff 50%, var(--secondary-text-color) 50%);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.name-n-author {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+@media (max-width: 1000px) {
+    .player {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .right-player {
+        display: none;
+    }
+
+    .left-player {
+        width: 80%;
+    }
+
+    .center-player {
+        width: 20%;
+    }
+}
+
+.name-n-author .name{
+
+    color: var(--main-text-color);
+}
+
+.name-n-author .author{
+
+    color: var(--secondary-text-color);
+}

@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "imageLink": "/images/1.jpg",
+      "musicLink": "/sound/1.mp3",
+      "author": "betrayalove",
+      "name" : "beats1",
+      "type" : "beat",
+      "bpm" : "123",
+      "price" : "₽ 1000"
+    },
+    {
+      "id": 2,
+      "imageLink": "/images/2.jpg",
+      "musicLink": "/sound/2.mp3",
+      "author": "betrayalove",
+      "name" : "beats1",
+      "type" : "beat",
+      "bpm" : "123",
+      "price" : "₽ 1000"
+    },
+    {
+      "id": 3,
+      "imageLink": "/images/3.jpg",
+      "musicLink": "/sound/3.mp3",
+      "author": "betrayalovezxcghoulzxczxcbetrayalovezxcghoulzxczxc",
+      "name" : "SERUM LIFE IS ONE STREET",
+      "type" : "beat",
+      "bpm" : "123",
+      "price" : "₽ 1000"
+    },
+    {
+      "id": 4,
+      "imageLink": "/images/4.jpg",
+      "musicLink": "/sound/3.mp3",
+      "author": "betrayalovezxcghoulzxczxcbetrayalovezxcghoulzxczxc",
+      "name" : "SERUM LIFE IS ONE STREET",
+      "type" : "beat",
+      "bpm" : "123",
+      "price" : "₽ 1000"
+    },
+    {
+      "id": 5,
+      "imageLink": "/images/3.jpg",
+      "musicLink": "/sound/3.mp3",
+      "author": "betrayalovezxcghoulzxczxcbetrayalovezxcghoulzxczxc",
+      "name" : "SERUM LIFE IS ONE STREET",
+      "type" : "beat",
+      "bpm" : "123",
+      "price" : "₽ 1000"
+    },
+    {
+      "id": 6,
+      "imageLink": "/images/3.jpg",
+      "musicLink": "/sound/3.mp3",
+      "author": "betrayalovezxcghoulzxczxcbetrayalovezxcghoulzxczxc",
+      "name" : "SERUM LIFE IS ONE STREET",
+      "type" : "beat",
+      "bpm" : "123",
+      "price" : "₽ 1000"
+    },
+    {
+      "id": 7,
+      "imageLink": "/images/3.jpg",
+      "musicLink": "/sound/3.mp3",
+      "author": "betrayalovezxcghoulzxczxcbetrayalovezxcghoulzxczxc",
+      "name" : "SERUM LIFE IS ONE STREET",
+      "type" : "beat",
+      "bpm" : "123",
+      "price" : "₽ 1000"
+    },
+    {
+      "id": 8,
+      "imageLink": "/images/3.jpg",
+      "musicLink": "/sound/3.mp3",
+      "author": "betrayalovezxcghoulzxczxcbetrayalovezxcghoulzxczxc",
+      "name" : "SERUM LIFE IS ONE STREET",
+      "type" : "beat",
+      "bpm" : "123",
+      "price" : "₽ 1000"
+    }
+  ]
+}

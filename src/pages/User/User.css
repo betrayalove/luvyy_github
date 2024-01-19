@@ -1,0 +1,65 @@
+.user-menu {
+    width: 100%;
+    background-color: var(--background-secondary-color);
+    display: flex;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.user-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.user-name-n-description {
+    margin: 20px 0;
+}
+
+.user-name {
+    font-size: var(--text-size-16);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+.user-description {
+    font-size: var(--text-size-12);
+    color: var(--main-text-color);
+    margin-right: 10px;
+}
+
+.tab-buttons{
+    margin: 20px 0;
+    display: flex;
+    width: calc(100% - 40px);
+    background-color: var(--background-secondary-color);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.tab-buttons-button{
+    font-size: var(--text-size-14);
+    font-weight: var(--font-weight-bold);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.tab-buttons-button:hover{
+    color: var(--secondary-text-color);
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 650px) {
+    .tab-buttons {
+        flex-direction: column; /* Размещаем кнопки в колонку */
+        align-items: center; /* Выравниваем по центру */
+        width: calc(100% - 40px); /* Занимает всю ширину экрана */
+
+    }
+
+    .tab-buttons-button {
+        width: 100%; /* Занимает всю ширину */
+    }
+}

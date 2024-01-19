@@ -1,0 +1,134 @@
+.standart_input {
+    width: 100%;
+    min-width: 300px;
+    max-width: 300px;
+    padding: 5px;
+    height: 35px;
+    background-color: var(--background-secondary-color);
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 5px;
+    color: var(--main-text-color);
+    box-sizing: border-box;
+
+}
+
+/*.standart_input:focus, .standart_input:not(:placeholder-shown) {*/
+/*    color: var(--main-text-color);*/
+/*    background-color: var(--background-secondary-color) !important;*/
+
+/*    box-shadow: 0 0 0 1000px var(--background-secondary-color) inset;*/
+/*}*/
+
+.standart_input:not(:placeholder-shown) {
+    color: var(--main-text-color);
+
+    box-shadow: 0 0 0 1000px var(--background-secondary-color) inset;
+}
+
+.standart_input:-webkit-autofill {
+    -webkit-text-fill-color: var(--main-text-color);
+    /*transition: var(--background-secondary-color) 5000s ease-in-out 0s;*/
+}
+
+/* Общие стили для всех состояний чекбокса */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--secondary-text-color);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Стили для неотмеченного чекбокса */
+input[type="checkbox"]:not(:checked) {
+    background-color: transparent;
+}
+
+/* Стили для отмеченного чекбокса */
+input[type="checkbox"]:checked {
+    border-color: var(--secondary-text-color);
+}
+
+/* Стили для чекбокса при фокусе */
+input[type="checkbox"]:focus {
+    border: 2px solid var(--main-text-color);
+}
+
+/* Стили для чекбокса при наведении */
+input[type="checkbox"]:hover {
+    border: 2px solid var(--main-text-color);
+}
+
+/* Стили для отмеченного чекбокса при наведении */
+input[type="checkbox"]:checked:hover {
+    border-color: var(--main-text-color);
+}
+/* Стили для отключенного чекбокса */
+input[type="checkbox"]:disabled {
+    opacity: 0.5; /* Уменьшаем прозрачность для обозначения отключенного состояния */
+    cursor: not-allowed; /* Запрещаем изменение при отключенном состоянии */
+}
+
+/* Стили для отключенного, неотмеченного чекбокса */
+input[type="checkbox"]:disabled:not(:checked) {
+    background-color: #ddd;
+    border-color: #ddd;
+}
+
+/* Стили для отключенного, отмеченного чекбокса */
+input[type="checkbox"]:disabled:checked {
+    background-color: #ccc;
+    border-color: #ccc;
+    color: #777;
+}
+
+/* Стили для отмеченного чекбокса с монолитным внутренним квадратом */
+input[type="checkbox"]:checked {
+    position: relative;
+
+    border-color: var(--secondary-text-color);
+    color: #fff;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: var(--secondary-text-color); /* Цвет внутреннего квадрата */
+    border: 2px solid var(--secondary-text-color); /* Граница внутреннего квадрата */
+    border-radius: 3px; /* Закругление углов внутреннего квадрата */
+}
+
+
+
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: var(--main-text-color); /* Изменение цвета границы при фокусе */
+}
+
+/* Стили для текстовых полей при наведении */
+input[type="text"]:hover,
+input[type="number"]:hover {
+    border-color: var(--main-text-color); /* Изменение цвета границы при наведении */
+}
+
+/* Стили для отключенных текстовых полей */
+input[type="text"]:disabled,
+input[type="number"]:disabled {
+    background-color: var(--background-color) !important;
+    border-color: var(--disabled);
+
+    cursor: not-allowed;
+}
+
+

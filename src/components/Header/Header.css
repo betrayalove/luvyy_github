@@ -1,0 +1,119 @@
+.main-header {
+    box-shadow: var(--box-shadow);
+    margin: 0 auto 20px;
+    width: 80%;
+    border-radius: 0 0 20px 20px;
+    background-color: var(--background-secondary-color);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.main-nav {
+    height: 50px;
+    font-size: var(--text-size-16);
+    font-weight: var(--font-weight-normal);
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav, .right-nav, .left-nav-without-logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.right-nav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5%;
+}
+
+.right-nav img {
+    cursor: pointer;
+}
+
+
+.logo {
+    color: var(--main-pink);
+    font-weight: var(--font-weight-bold);
+}
+
+.main-header .svg-el {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+
+}
+
+.main-header .svg-el:hover {
+    transition: 0.3s;
+    transform: rotate(15deg);
+    text-shadow: #FF21C1 2px 2px 2px 2px;
+}
+
+.profile-menu {
+    position: absolute;
+    right: 0;
+    top: calc(3rem + 0.5rem);
+    min-width: 120px;
+    z-index: 2;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    background-color: var(--background-secondary-color);
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: var(--text-size-14);
+    font-weight: var(--font-weight-normal);
+}
+
+
+.profile-menu-link:hover {
+    color: var(--secondary-text-color);
+}
+
+@media (max-width: 1000px) {
+    .main-header {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .mobile-menu {
+        top: calc(50px);
+    }
+
+    .profile-menu {
+        right: 0;
+    }
+}
+
+
+.main-menu {
+    position: absolute;
+    left: 0;
+    top: calc(3rem + 0.5rem);
+    min-width: 80px;
+    z-index: 2;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    background-color: var(--background-secondary-color);
+    padding: 0.5rem;
+    font-size: var(--text-size-14);
+    font-weight: var(--font-weight-normal);
+    margin-left: 90px;
+}
+
+.main-menu a {
+    display: flex;
+    text-decoration: none;
+    color: var(--main-text-color);
+    margin: 0.25rem 0;
+    word-break: break-word;
+}
+
+.main-menu a:hover {
+    color: var(--secondary-text-color);
+}

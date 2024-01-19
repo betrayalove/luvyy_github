@@ -1,0 +1,224 @@
+.beat-id-elements {
+    display: flex;
+    gap: 20px 20px;
+}
+
+
+.beat-card-id {
+    position: relative;
+    width: 300px;
+
+    .beat-image-id {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        object-fit: cover;
+        /*border: 1px solid #828282;*/
+    }
+}
+
+
+.control-button-id {
+    position: absolute;
+    cursor: pointer;
+    top: 6.25rem;
+    left: 6.25rem;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.control-button-id:hover {
+    transform: rotate3d(1, 2, 1, 15deg);
+    transition: 0.3s;
+}
+
+.control-button-id img {
+    width: 40px;
+    height: 40px;
+}
+
+.licenses {
+    display: flex;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+    justify-content: left; /* Center the blocks by default */
+}
+
+.license {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    min-width: 280px;
+    padding: 10px;
+    background-color: var(--background-secondary-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.license .buy-button {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--main-text-color);
+    background-color: var(--background-secondary-color);
+    border: 1px solid var(--secondary-text-color);
+    font-size: var(--text-size-14);
+    font-weight: var(--font-weight-bold);
+    transition: 0.2s;
+}
+
+.beat-id-info {
+    margin-top: 10px;
+    background-color: var(--background-secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: var(--text-size-14);
+    overflow: hidden; /* Add this line to clip overflowing text */
+}
+
+.beat-id-info div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.beat-id-free-download {
+    margin-top: 10px;
+    background-color: var(--background-secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+    width: 280px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.license-name {
+    font-size: var(--text-size-16);
+    font-weight: var(--font-weight-normal);
+}
+
+.beat-id-left-bar {
+    width: 300px;
+    height: 100%;
+
+}
+
+.beat-id-right-bar {
+    height: 100%;
+    width: 100%;
+
+}
+.youtube-player{
+    width: 100%;
+    max-width: 940px;
+    height: 400px;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+.comment-added{
+    width: 100%;
+    max-width: 940px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .comment-added-textarea{
+        color: var(--main-text-color);
+        min-width: 100%;
+        max-width: 100%;
+        font-size: var(--text-size-14);
+        min-height: 50px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: var(--background-color);
+        border: 1px var(--secondary-text-color) solid;
+    }
+    .comment-add-button{
+        height: 40px;
+        background-color: var(--background-secondary-color);
+        border: 1px var(--secondary-text-color) solid;
+        border-radius: 10px;
+        color: var(--main-text-color);
+        cursor: pointer;
+        transition: 0.2s;
+        margin-top: 10px;
+    }
+    .comment-add-button:hover{
+        transition: 0.2s;
+        background-color: var(--background-color);
+    }
+}
+.comments{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 940px;
+
+    .comment{
+        background-color: var(--background-secondary-color);
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        gap: 10px
+    }
+
+    .comment img{
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .comment-author{
+        font-weight: var(--font-weight-normal);
+        font-size: var(--text-size-14);
+    }
+}
+
+
+
+
+@media (max-width: 675px) {
+    .beat-id-elements {
+        flex-direction: column; /* Stack the license blocks vertically */
+        align-items: center; /* Center them horizontally */
+    }
+
+    .licenses {
+        width: 300px; /* Limit the width to 300 pixels */
+        margin: 0 auto; /* Center the container horizontally */
+        display: flex;
+        gap: 10px 20px;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the blocks within the container */
+    }
+
+    .beat-id-right-bar {
+        width: 300px;
+    }
+}
+
+.beat-id-block-name {
+    margin-bottom: 10px;
+    font-size: var(--text-size-16);
+    font-weight: var(--font-weight-normal);
+}

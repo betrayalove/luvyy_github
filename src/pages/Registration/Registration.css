@@ -1,0 +1,96 @@
+/*.registration-container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.registration-form {*/
+/*    width: 100%;*/
+/*    max-width: 260px;*/
+/*    background-color: var(--background-secondary-color);*/
+/*    border-radius: 10px;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.form-group {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.register-button-container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    margin: 15px 0;*/
+/*}*/
+
+/*.register-button {*/
+/*    width: 80%;*/
+/*    cursor: pointer;*/
+/*    transition: border 0.2s;*/
+/*}*/
+
+/*.register-button:hover {*/
+/*    border: 1px solid var(--main-text-color);*/
+/*}*/
+
+/*.login-button-nav {*/
+/*    cursor: pointer;*/
+/*    color: var(--secondary-text-color);*/
+/*    transition: color 0.2s;*/
+/*}*/
+
+/*.login-button-nav:hover {*/
+/*    color: var(--main-text-color);*/
+/*}*/
+
+/*!* Additional Styles *!*/
+/*.error-message {*/
+/*    color: red;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.form-group label {*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.form-group input:focus {*/
+/*    outline: 1px solid var(--main-text-color);*/
+/*    transition: outline 0.2s ease-in-out;*/
+/*}*/
+
+/*.form-group input:-webkit-autofill {*/
+/*    -webkit-box-shadow: 0 0 0 1000px var(--background-secondary-color) inset;*/
+/*}*/
+
+/*.registration-container input {*/
+/*    width: 100%;*/
+/*    max-width: 250px;*/
+/*    height: 30px;*/
+/*    background-color: transparent;*/
+/*    border: 1px solid var(--secondary-text-color);*/
+/*    border-radius: 5px;*/
+/*    color: var(--main-text-color);*/
+/*}*/
+/*.registration-container input:focus,*/
+/*.registration-container input:not(:placeholder-shown) {*/
+/*    background-color: transparent !important;*/
+/*    box-shadow: 0 0 0 1000px var(--background-secondary-color) inset; !* Set a large inset box shadow to override autofill styles *!*/
+/*}*/
+/*.registration-container input:-webkit-autofill{*/
+/*    -webkit-text-fill-color: var(--main-text-color) !important;*/
+/*}*/
+
+/*.registration-container button {*/
+/*    width: 100%;*/
+/*    max-width: 255px;*/
+/*    padding: 10px;*/
+/*    box-sizing: border-box;*/
+/*    border-radius: 5px;*/
+/*    color: var(--main-text-color);*/
+/*    background-color: var(--background-secondary-color);*/
+/*    border: 1px solid var(--secondary-text-color);*/
+/*    font-size: var(--text-size-14);*/
+/*    font-weight: var(--font-weight-bold);*/
+/*    transition: 0.2s;*/
+/*}*/

@@ -1,0 +1,129 @@
+/*.beats-list {*/
+/*    display: flex; !* Измените это *!*/
+/*    flex-wrap: wrap; !* Добавьте это *!*/
+/*    justify-content: space-between; !* Измените это *!*/
+/*    gap: 40px 20px;*/
+/*    font-size: var(--standart-text-size);*/
+/*    padding: 0 10%;*/
+/*}*/
+
+/*.beats-list {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));*/
+/*    gap: 40px 20px;*/
+/*    font-size: var(--standart-text-size);*/
+/*    padding: 0 10%;*/
+/*    align-items: start;*/
+/*    justify-items: start;*/
+/*    justify-content: space-around; !* Добавьте это *!*/
+/*}*/
+
+.beats-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px 20px;
+    font-size: var(--text-size-14);
+    font-weight: var(--font-weight-bold);
+    padding: 0 10%;
+    justify-content: space-between; /* Добавьте это */
+    justify-items: center;
+
+}
+
+.beat-card {
+    position: relative;
+    width: 240px;
+
+    .beat-image {
+        width: 240px;
+        height: 240px;
+        border-radius: 20px;
+        object-fit: cover;
+        /*border: 1px solid #828282;*/
+    }
+}
+
+
+.control-button {
+    position: absolute;
+    cursor: pointer;
+    top: 5rem;
+    left: 5rem;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.control-button:hover{
+    transform: rotate3d(1, 2, 1, 15deg);
+    transition: 0.3s;
+}
+
+.control-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.like-button {
+    position: absolute;
+    cursor: pointer;
+    top: calc(0% + 10px);
+    left: calc(100% - 50px);
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.like-button:hover{
+    transform: rotate(15deg);
+    transition: 0.3s;
+}
+
+.like-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.price-n-type {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-top: 5px;
+
+    .beat-price {
+        color: var(--main-pink);
+    }
+
+    .beat-type {
+        color: var(--secondary-text-color);
+    }
+}
+
+.beat-name, .beat-author {
+    margin-top: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.beat-name{
+    font-size: var(--text-size-16);
+}
+.beat-name a:hover {
+    text-decoration: underline !important;
+}
+
+.beat-author{
+    color: var(--secondary-text-color);
+}
